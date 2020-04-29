@@ -4,7 +4,9 @@ const robots = {
 }
 
 async function start() {
-    const content = {}
+    const content = {
+        maximumSentences: 7
+    }
 
     content.searchTerm = askAndReturnSearchTerm()
     content.prefix = askAndReturnPrefix()
@@ -28,7 +30,7 @@ async function start() {
         const language = ['pt', 'en']
         const selectedLangIndex = readline.keyInSelect(language, 'Choice Language: ')
         const selectedLangText = language[selectedLangIndex]
-        
+
         return selectedLangText
     }
 
