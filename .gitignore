@@ -82,9 +82,6 @@ typings/
 .nuxt
 dist
 
-# credentials
-credentials/*.json
-
 # Gatsby files
 .cache/
 # Comment in the public line in if your project uses Gatsby and *not* Next.js
@@ -105,3 +102,8 @@ credentials/*.json
 
 # TernJS port file
 .tern-port
+
+# credentials
+credentials/*.json
+
+content.json
