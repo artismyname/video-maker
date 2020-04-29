@@ -19,3 +19,13 @@ File: `watson-nlu.json`:
     "url": "https://api.us-south.natural-language-understanding.watson.cloud.ibm.com/instances/f01014a6-ac54-4ac9-b6fb-7e901916afc3"
 }
 ```
+
+## Google Search
+
+File: `google-search.json`
+```
+{
+    "apiKey": "AIzaSyAlb6oIcP1AA7aLi2tWELPBSySzsp1tys4",
+    "searchEngineId": "009341137149101792381:1p0ascqsmaa"
+}
+```
