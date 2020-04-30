@@ -17,6 +17,7 @@ const nlu = new NaturalLanguageUnderstandingV1({
 const state = require('./state.js')
 
 async function robot() {
+    console.log('> [text-robot] Starting...')
     const content = state.load()
 
     await fetchContentFromWikipedia(content)
@@ -105,7 +106,7 @@ async function robot() {
                     resolve(keywords)
                 })
                 .catch(err => {
-                    console.log('error: ', err)
+                    reject('error: ', err)
                 })
         })
     }
