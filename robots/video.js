@@ -62,7 +62,7 @@ async function robot() {
                         return reject(err)
                     }
 
-                    console.log(`> [video-robot] Image converted: ${inputFile}`)
+                    console.log(`> [video-robot] Image converted: ${outputFile}`)
                     resolve()
                 })
         })
@@ -199,7 +199,7 @@ async function robot() {
                 .audio(audio, audioParams)
                 .save(video)
                 .on('start', function (command) {
-                    console.log('\n\n [ FFmpeg still working in ]:\n\n', command, '\n\n[ Please wait... ]')
+                    console.log('[ FFmpeg still working in ]:\n\n', command, '\n\n[ Please wait... ]')
                 })
                 .on('error', function (err, stdout, stderr) {
                     console.error('Error:', err)
@@ -207,7 +207,7 @@ async function robot() {
                 })
                 .on('end', function (output) {
                     resolve()
-                    console.error('\n\n[video-robot] Finished processing. Video created:\n\n', output, '\n\n')
+                    console.error('[video-robot] Finished processing. Video created:\n\n', output, '\n\n')
                 })
         })
     }
